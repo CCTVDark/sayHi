@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="headerFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMJ-MX-NgT">
+                    <rect key="frame" x="48" y="13" width="69" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="nOs-KM-rDM"/>
+                        <constraint firstAttribute="height" constant="21" id="pV4-5v-Nj8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ugz-LX-865">
+                    <rect key="frame" x="5" y="8" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="HHz-mO-O93"/>
+                        <constraint firstAttribute="width" constant="32" id="WtG-b8-GAr"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2m-jO-gqY">
+                    <rect key="frame" x="5" y="44" width="370" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SxR-tk-wQX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ugz-LX-865" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="7WM-53-0Uq"/>
+                <constraint firstItem="wMJ-MX-NgT" firstAttribute="leading" secondItem="Ugz-LX-865" secondAttribute="trailing" constant="11" id="GCU-Z3-tU6"/>
+                <constraint firstItem="Ugz-LX-865" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="J82-yI-0Yx"/>
+                <constraint firstAttribute="bottom" secondItem="a2m-jO-gqY" secondAttribute="bottom" id="LRi-Bq-rfg"/>
+                <constraint firstItem="a2m-jO-gqY" firstAttribute="top" secondItem="Ugz-LX-865" secondAttribute="bottom" constant="4" id="NWF-IM-UvM"/>
+                <constraint firstItem="wMJ-MX-NgT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="YHh-GM-VMc"/>
+                <constraint firstAttribute="trailing" secondItem="a2m-jO-gqY" secondAttribute="trailing" id="lqf-hO-5fh"/>
+                <constraint firstItem="a2m-jO-gqY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ufY-Hq-OEp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ThreadView" destination="a2m-jO-gqY" id="Q0T-qc-rux"/>
+                <outlet property="headerImage" destination="Ugz-LX-865" id="KCU-1y-daj"/>
+                <outlet property="listLabel" destination="wMJ-MX-NgT" id="hgg-mF-33i"/>
+            </connections>
+            <point key="canvasLocation" x="426.5" y="391.5"/>
+        </view>
+    </objects>
+</document>

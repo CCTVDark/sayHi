@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  SayHi
+//
+//  Created by lanouhn on 16/5/11.
+//  Copyright © 2016年 LiuGouDong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "NetworkingManager.h"
+#import "UIImageView+AFNetworking.h"
+#import "UIScrollView+MJRefresh.h"
+#import "AppDelegate.h"
+#import "Header.h"
+#import "DDMenuController.h"//即将作为根视图控制器
+//联系人
+#import "ContactViewController.h"
+//消息
+#import "MessageViewController.h"
+//抽屉
+#import "MenuViewController.h"
+//动态
+#import "DynamicViewController.h"
+//聊天界面
+#import "ChatViewController.h"
+//语音视频界面
+#import "ChatCallController.h"
+
+//引入环信
+#import "EMSDK.h"
+//实时通话
+#import "EMSDKFull.h"
+
+
+//联系人助手类
+#import "SereverManager.h"
+//相册选择助手类
+#import "ImageSelectManager.h"
+//录音功能助手类
+#import "AudioRecorderManager.h"
+//button延展
+#import "UIButton+Action.h"
+//中文拼音
+#import "ChineseToPinyin.h"
+#endif /* PrefixHeader_pch */
